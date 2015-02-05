@@ -1,0 +1,35 @@
+.ui-grid {
+  margin: 20px 0px;
+  max-height: 300px;
+
+  .custom-row {
+    border-bottom: solid 1px lightgray;
+  }
+
+  .custom-cell {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    background-color: white;
+    border-right: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .custom-header-cell {
+    background-color: #F3F3F3;
+    font-weight: normal !important;
+  }
+
+  .delete-icon {
+    @include hand-cursor;
+    postion: relative;
+    top: 6px;
+    left: 3px;
+  }
+
+  .delete-icon:hover {
+    color: red;
+  }
+}

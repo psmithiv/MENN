@@ -1,0 +1,10 @@
+# file extensions
+**/*.iml
+
+# folders
+**/backend/app/node_modules
+**/backend/upload_tmp
+
+**/frontend/app/lib
+**/frontend/scss/.sass-cache
+**/frontend/uploads/**

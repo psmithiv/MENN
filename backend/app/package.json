@@ -1,0 +1,22 @@
+{
+  "name": "MENN",
+  "version": "0.0.1",
+  "description": "MENN Stack Seed Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Paul C. Smith IV",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "connect-multiparty": "^1.2.5",
+    "express": "^4.10.7",
+    "mongoose": "^3.8.21",
+    "multer": "^0.1.7",
+    "nioc": "^2.1.2",
+    "q": "^1.1.2"
+  }
+}

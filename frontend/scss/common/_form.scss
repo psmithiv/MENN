@@ -1,0 +1,61 @@
+.form {
+  padding: 10px 0px;
+
+  .bio {
+    min-height: 100px;
+  }
+
+  .date-field {
+    margin: 0px;
+
+    td, th {
+      padding: 1px;
+    }
+
+    input {
+      cursor: default;
+      background-color: white;
+    }
+
+    .input-group {
+      margin: 0px;
+    }
+
+    .input-group-btn>.btn>.glyphicon {
+      top: 2px;
+      left: 1px;
+    }
+
+    .dropdown-menu {
+      padding: 5px;
+      margin-top: -1px;
+      left: auto !important;
+      right: 0;
+
+      >li>div>table {
+        outline: none !important;
+      }
+
+      li>.btn-group {
+        margin: -5px 0px 0px -9px !important;
+      }
+
+      li>button {
+        margin: -5px -9px;
+      }
+    }
+  }
+
+  .required-label::after {
+    content: ' *';
+    color: red;
+  }
+
+  .error {
+    border-color: red;
+  }
+
+  .reset-btn {
+    margin-right: 10px;
+  }
+}

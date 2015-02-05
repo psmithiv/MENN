@@ -1,0 +1,16 @@
+{
+  "name": "MENN-frontend",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.3.8",
+    "angular-bootstrap": "~0.12.0",
+    "angular-route": "~1.3.9",
+    "bootstrap": "~3.3.2",
+    "lodash": "~3.0.1",
+    "angular-ui-grid": "~3.0.0-rc.16",
+    "danialfarid-angular-file-upload": "~3.0.1"
+  },
+  "resolutions": {
+    "angular": "~1.3.8"
+  }
+}

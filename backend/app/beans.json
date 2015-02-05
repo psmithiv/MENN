@@ -1,0 +1,56 @@
+{
+  "express": {
+    "path": "config/express.config",
+    "config": {
+      "port": 3000,
+      "staticDir": "../../frontend/app"
+    }
+  },
+
+  "mongoose": {
+    "path": "config/mongoose.config",
+    "config": {
+      "host": "localhost",
+      "port": 27017,
+      "databaseId": "games_db_test_012815"
+    }
+  },
+
+  "multer": {
+    "path": "config/multer.config",
+    "config": {
+      "fileDest": "./upload_tmp",
+      "limit": 1
+    }
+  },
+
+  "fileUtil": {
+    "path": "util/file.util"
+  },
+
+  "systemConstants": {
+    "path": "model/constant/system.constants"
+  },
+
+  "gamesController": {
+    "path": "controller/games.controller"
+  },
+
+  "gamesService": {
+    "path": "service/games.service",
+    "config": {
+      "gameImageDir": "../../frontend/app/uploads/images/games/"
+    }
+  },
+
+  "gamesDao": {
+    "path": "dao/games.dao"
+  },
+
+  "gameSchema": {
+    "path": "model/schema/game.schema",
+    "config": {
+      "table": "games_test_table"
+    }
+  }
+}
