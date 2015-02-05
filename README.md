@@ -1,2 +1,2 @@
 # MENN
-Mongoose, Express, NIoC, NodeJS (MENN) Stack Sample Project
+Mongoose, Express, NIoC, NodeJS (MENN Stack) Sample Project

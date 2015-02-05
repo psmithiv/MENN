@@ -4,6 +4,7 @@
     <div class="col-sm-12 padding-0">
         <button class="btn btn-default pull-right" ng-click="newGame()">New Game</button>
     </div>
+    
     <div class="col-sm-12 padding-0">
         <div class="ui-grid" ui-grid="gridOptions" ui-grid-auto-resize ui-grid-resize-columns ui-grid-selection
              ng-visible="modelLocator.games" external-scopes="this"></div>
@@ -87,6 +88,7 @@
         <button type="button" class="btn btn-default reset-btn pull-right" ng-click="resetForm()" value="Reset" 
                 ng-disabled="!modelLocator.editGame">Reset</button>
     </form>
+    
     <div class="col-sm-6 media-gallery">
         <input class="choose-btn" type="file" ng-file-select="uploadGameImage($files)" />
         <img class="image" ng-src="{{modelLocator.editGame.image ? '/uploads/images/games/' + modelLocator.editGame.image : 'http://'}}"
