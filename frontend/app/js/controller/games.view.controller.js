@@ -80,7 +80,11 @@ gamesViewController.controller('gamesViewController', [
         };
 
         var resetForm = function () {
-            editGame({_id: modelLocator.editGame._id});
+            if(modelLocator.editGame._id) {
+                editGame({_id: modelLocator.editGame._id});
+            } else {
+                newGame();
+            }
         };
 
         /**
@@ -111,7 +115,9 @@ gamesViewController.controller('gamesViewController', [
          */
         //TODO: Wrap ui-grid in a directive and get this config code out of this controller -psmithiv
         var rowSelectionChanged = function (row) {
-            if (row.entity._id != modelLocator.editGame._id)
+            //console.log('row.entity._id: ' + row.entity._id);
+            //console.log('modelLocator.editGame._id: ' + modelLocator.editGame._id)
+            if (!modelLocator.editGame || row.entity._id != modelLocator.editGame._id)
                 editGame(row.entity);
         };
 

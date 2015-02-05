@@ -96,64 +96,7 @@ function init(config) {
 
         return fileUtil.moveFile(file.filename.path, config.gameImageDir + file.filename.name)
             .then(success, fail);
-    }
-
-    /**
-     *
-     * @param id
-     * @param file
-     * @returns {*}
-     */
-    //var uploadGameImage = function(id, file) {
-    //    //validate game id before preceding
-    //    var fail = function(fault) {
-    //        //getGameById failed, remove uploaded file
-    //        fileUtil.deleteFile(file.filename.path);
-    //
-    //        return Q.reject(fault);
-    //    };
-    //
-    //    var success = function(result) {
-    //        return moveUploadedFile(result, file);
-    //    };
-    //
-    //    return getGameById(id)
-    //        .then(success, fail);
-    //};
-    //
-    //var moveUploadedFile = function(game, file) {
-    //    var success = function(result) {
-    //        return updateGameAfterImageUpload(game, file);
-    //    };
-    //
-    //    var fail = function(fault) {
-    //        console.log('games.service - uploadGameImage.fail');
-    //        //move failed, attempt to delete original file
-    //        fileUtil.deleteFile(file.file.filename.path);
-    //
-    //        return Q.reject(fault);
-    //    };
-    //
-    //    return fileUtil.moveFile(file.filename.path, config.gameImageDir + file.filename.name)
-    //        .then(success, fail);
-    //};
-    //
-    //var updateGameAfterImageUpload = function(game, file) {
-    //    var success = function(result) {
-    //        return result;
-    //    }
-    //
-    //    var fail = function(fault) {
-    //        //update game failed, remove uploaded image
-    //        fileUtil.deleteFile(config.gameImageDir + file.filename.name);
-    //
-    //        return Q.reject(fault);
-    //    }
-    //
-    //    game.imageFileName = file.filename.name;
-    //    return putGame(game)
-    //        .then(success, fail);
-    //};
+    };
 
     return {
         getGames: getGames,

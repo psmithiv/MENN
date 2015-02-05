@@ -141,7 +141,7 @@ gamesService.service('gamesService', [
          */
         var newGame = function() {
             modelLocator.editGame = null;
-        }
+        };
 
         //expose public properties/methods
         return {

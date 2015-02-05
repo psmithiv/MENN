@@ -11,7 +11,8 @@ modelLocator.service('modelLocator', [
         var editGame = {};
 
         return {
-            games: games
+            games: games,
+            editGame: editGame
         }
     }
 ])

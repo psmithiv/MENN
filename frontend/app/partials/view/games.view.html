@@ -84,7 +84,8 @@
             </div>
         </div>
         <button type="submit" class="btn btn-default pull-right" value="Save">Save</button>
-        <button type="button" class="btn btn-default reset-btn pull-right" ng-click="resetForm()" value="Reset">Reset</button>
+        <button type="button" class="btn btn-default reset-btn pull-right" ng-click="resetForm()" value="Reset" 
+                ng-disabled="!modelLocator.editGame">Reset</button>
     </form>
     <div class="col-sm-6 media-gallery">
         <input class="choose-btn" type="file" ng-file-select="uploadGameImage($files)" />
