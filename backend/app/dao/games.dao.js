@@ -6,8 +6,9 @@ exports = module.exports = init;
 function init() {
     'use strict';
 
-    var Q = require('q');
-    var GameSchema = inject('gameSchema');
+    //dependencies
+    var Q = require('q'),
+        GameSchema = inject('gameSchema');
 
     /**
      * @public

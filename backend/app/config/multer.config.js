@@ -4,33 +4,25 @@
 exports = module.exports = init;
 
 function init(config) {
+    'use strict';
+
+    //dependencies
     var multer = require('multer');
 
     var conf;
 
-    var rename = function(filename, filename) {
+    var rename = function(filename) {
         return filename + '_' + Date.now();
-    };
-
-    var onFileUploadStart = function(file) {
-      console.log('onFileUploadStart: ' + file.originalname);
-    };
-
-    var onFileUploadComplete = function(file) {
-        console.log('onFileUploadComplete: ' + file.fieldname);
     };
 
     /**
      * constructor
      */
     (function() {
-        console.log('conf.fileDest: ' + config.fileDest)
         conf = multer({
             dest: config.fileDest,
             limits: config.limits,
-            rename: rename//,
-            //onFileUploadStart: onFileUploadStart,
-            //onFileUploadComplete: onFileUploadComplete
+            rename: rename
         })
     }());
 

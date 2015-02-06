@@ -6,10 +6,11 @@ exports = module.exports = init;
 function init() {
     'use strict';
 
-    var express = inject('express');
-    var system = inject('systemConstants');
-    var gamesService = inject('gamesService');
-    var GameSchema = inject('gameSchema');
+    //dependencies
+    var express = inject('express'),
+        system = inject('systemConstants'),
+        gamesService = inject('gamesService'),
+        GameSchema = inject('gameSchema');
 
     /**
      * Expose GET /games endpoint

@@ -4,6 +4,8 @@
 exports = module.exports = init;
 
 function init() {
+    'use strict';
+    
     var fs = require('fs');
     var Q = require('q');
 
@@ -15,12 +17,7 @@ function init() {
     var moveFile = function(source, destination) {
         var deferred = Q.defer();
 
-        console.log('source: ' + source);
-        console.log('destination: ' + destination);
-
         fs.rename(source, destination, function(err) {
-            console.log('rename: ' + err);
-
             if(err) {
                 deferred.reject(err);
             } else {

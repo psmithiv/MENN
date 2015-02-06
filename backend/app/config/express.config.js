@@ -4,9 +4,15 @@
 exports = module.exports = init;
 
 function init(config) {
-    var express = require('express');
-    var bodyParser = require('body-parser');
-    var multer = inject('multer');
+    'use strict';
+
+    //dependencies
+    var express = require('express'),
+        bodyParser = require('body-parser'),
+        cookieParser = require('cookie-parser'),
+        session = require('express-session'),
+        MongoStore = require('connect-mongo')(session),
+        multer = inject('multer');
 
     /**
      * Express app instance
@@ -20,10 +26,20 @@ function init(config) {
      */
     (function() {
         app = express();
-        app.listen(config.port);
-        app.use(bodyParser.json());
-        app.use(multer);
         app.use('/', express.static(config.staticDir));
+        app.use(bodyParser.json());
+        app.use(cookieParser());
+        app.use(session({
+            secret: config.sessionSecret,
+            store: new MongoStore({
+                db: config.sessionTable
+            }),
+            saveUninitialized: true,
+            resave: true,
+            unset: 'destroy'
+        }));
+        app.use(multer);
+        app.listen(config.port);
     }());
 
     return app;

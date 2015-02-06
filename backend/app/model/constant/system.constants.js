@@ -4,6 +4,8 @@
 exports = module.exports = init;
 
 function init() {
+    'use strict';
+    
     /**
      *
      * @type {string}

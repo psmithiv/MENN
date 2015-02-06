@@ -6,6 +6,7 @@ exports = module.exports = init;
 function init(config) {
     'use strict';
 
+    //dependencies
     var mongoose = inject('mongoose');
 
     var gameSchema,
@@ -14,22 +15,22 @@ function init(config) {
     /**
      * Constructor
      */
-    (function() {
+    (function () {
         gameSchema = new mongoose.Schema({
-            created: Date,
-            title: String,
-            developers: String,
-            publishers: String,
-            platforms: String,
-            releaseDates: Date,
-            genres: String,
-            awards: String,
-            summary: String,
-            image: String
+            created: {type: Date},
+            title: {type: String},
+            developers: {type: String},
+            publishers: {type: String},
+            platforms: {type: String},
+            releaseDates: {type: Date},
+            genres: {type: String},
+            awards: {type: String},
+            summary: {type: String},
+            image: {type: String}
         })
 
-        gameSchema.pre('save', function(next) {
-            if(!this.created) {
+        gameSchema.pre('save', function (next) {
+            if (!this.created) {
                 this.created = new Date();
             }
 

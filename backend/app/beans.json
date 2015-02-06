@@ -3,7 +3,10 @@
     "path": "config/express.config",
     "config": {
       "port": 3000,
-      "staticDir": "../../frontend/app"
+      "staticDir": "../../frontend/app",
+      "sessionTable": "users_test_020615",
+      "sessionSecret": "4e39897bae83be1f450dfb6636081be5",
+      "sessionMaxTime": 3600000
     }
   },
 
@@ -24,6 +27,8 @@
     }
   },
 
+  
+  
   "fileUtil": {
     "path": "util/file.util"
   },
@@ -32,6 +37,32 @@
     "path": "model/constant/system.constants"
   },
 
+  
+  
+  "userController": {
+    "path": "controller/user.controller"
+  },
+
+  "userService": {
+    "path": "service/user.service"
+  },
+
+  "userDao": {
+    "path": "dao/user.dao",
+    "config": {
+      "iterations": 10000
+    }
+  },
+
+  "userSchema": {
+    "path": "model/schema/user.schema",
+    "config": {
+      "table": "users_test_020615"
+    }
+  },
+  
+  
+  
   "gamesController": {
     "path": "controller/games.controller"
   },

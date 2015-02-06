@@ -4,6 +4,9 @@
 exports = module.exports = init;
 
 function init(config) {
+    'use strict';
+
+    //dependencies
     var mongoose = require('mongoose');
 
     /**

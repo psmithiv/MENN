@@ -6,9 +6,10 @@ exports = module.exports = init;
 function init(config) {
     'use strict';
 
-    var Q = require('q');
-    var gamesDao = inject('gamesDao');
-    var fileUtil = inject('fileUtil');
+    //dependencies
+    var Q = require('q'),
+        gamesDao = inject('gamesDao'),
+        fileUtil = inject('fileUtil');
 
     /**
      * @public
