@@ -1,0 +1,5 @@
+<div class="header" ng-controller="headerViewController">
+    <div class="nav-bar">Games View</div>
+    <span class="login-signup" ng-hide="modelLocator.user"><a ng-click="login()">Login</a>&nbsp/&nbsp<a ng-click="register()">Register</a></span>
+    <span class="login-signup" ng-show="modelLocator.user">{{modelLocator.user.name}}&nbsp;/&nbsp<a>Sign out</a></span>
+</div>

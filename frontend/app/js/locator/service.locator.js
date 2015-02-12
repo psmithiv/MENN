@@ -64,6 +64,10 @@ serviceLocator.service('serviceLocator', [
                 file: file
             })
         }
+        
+        var isAuthenticated = function() {
+            return http.get(baseUrl + '/authenticated');
+        }
 
         //expose public properties/methods
         return {

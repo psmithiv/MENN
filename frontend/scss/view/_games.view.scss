@@ -1,3 +1,5 @@
 .games-view {
+  @extend .view-base;
+  
   padding: 20px;
 }

@@ -10,6 +10,9 @@ var mennFrontend = angular.module('mennFrontend', [
     'ui.grid.selection',
     'angularFileUpload',
 
+    //enums
+    'authModalStateEnum',
+    
     //locators
     'serviceLocator',
     'modelLocator',
@@ -17,10 +20,15 @@ var mennFrontend = angular.module('mennFrontend', [
     //directives
     'formUtilDirective',
 
-    //controllers
+    //controllers -view
+    'headerViewController',
     'gamesViewController',
+    
+    //controllers -modal
+    'authModalController',
 
     //services
+    'modalService',
     'gamesService'
 ])
 

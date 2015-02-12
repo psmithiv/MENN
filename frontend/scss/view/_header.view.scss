@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: $header-height;
+  z-index: 1000;
+  border-bottom: solid 1px lightgray;
+  background-color: white;
+  line-height: $header-height;
+  padding: 0px 20px;
+  
+  .nav-bar {
+    float: left;
+  }
+  
+  .login-signup {
+    float: right;
+  }
+}

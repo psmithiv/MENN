@@ -1,3 +1,5 @@
+@import 'vars';
+
 @import 'mixins/hand-cursor';
 
 @import 'common/_ui.grid';
@@ -5,4 +7,7 @@
 @import 'common/_form';
 @import 'common/_media.gallery';
 
+@import 'view/view.base';
+@import 'view/header.view';
+@import 'view/footer.view';
 @import 'view/games.view';

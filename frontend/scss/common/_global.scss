@@ -1,3 +1,11 @@
+html, body {
+  height: 100%;
+}
+
+a {
+  @include hand-cursor;
+}
+
 .padding-0 {
   padding: 0px;
 }

@@ -37,6 +37,17 @@
 }
 
 /* line 1, ../../../scss/common/_global.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../../../scss/common/_global.scss */
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 9, ../../../scss/common/_global.scss */
 .padding-0 {
   padding: 0px;
 }
@@ -69,7 +80,6 @@
 /* line 24, ../../../scss/common/_form.scss */
 .form .date-field .input-group-btn > .btn > .glyphicon {
   top: 2px;
-  left: 1px;
 }
 /* line 29, ../../../scss/common/_form.scss */
 .form .date-field .dropdown-menu {
@@ -116,6 +126,46 @@
 /* line 9, ../../../scss/common/_media.gallery.scss */
 .media-gallery .choose-btn {
   padding-top: 10px;
+}
+
+/* line 1, ../../../scss/view/_view.base.scss */
+.view-container {
+  min-height: calc(100% - 22px);
+}
+
+/* line 5, ../../../scss/view/_view.base.scss */
+.view-base, .games-view {
+  margin-top: 40px;
+}
+
+/* line 1, ../../../scss/view/_header.view.scss */
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
+  border-bottom: solid 1px lightgray;
+  background-color: white;
+  line-height: 40px;
+  padding: 0px 20px;
+}
+/* line 12, ../../../scss/view/_header.view.scss */
+.header .nav-bar {
+  float: left;
+}
+/* line 16, ../../../scss/view/_header.view.scss */
+.header .login-signup {
+  float: right;
+}
+
+/* line 1, ../../../scss/view/_footer.view.scss */
+.footer {
+  height: 22px;
+  border-top: solid 1px lightgray;
+  padding: 0px 20px;
+  line-height: 22px;
+  text-align: right;
 }
 
 /* line 1, ../../../scss/view/_games.view.scss */

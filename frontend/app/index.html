@@ -27,6 +27,9 @@
 
     <script src="app.js"></script>
 
+    <!-- enums -->
+    <script src="js/model/enum/auth.modal.state.enum.js"></script>
+    
     <!-- locators -->
     <script src="js/locator/service.locator.js"></script>
     <script src="js/locator/model.locator.js"></script>
@@ -34,13 +37,20 @@
     <!-- directives -->
     <script src="js/directive/form.util.directive.js"></script>
 
-    <!-- controllers -->
+    <!-- controllers -view -->
+    <script src="js/controller/header.view.controller.js"></script>
     <script src="js/controller/games.view.controller.js"></script>
 
+    <!-- controllers -modal -->
+    <script src="js/controller/modal/auth.modal.controller.js"></script>
+    
     <!-- services -->
+    <script src="js/service/modal.service.js"></script>
     <script src="js/service/games.service.js"></script>
 </head>
 <body>
-    <div ng-view></div>
+    <div ng-include="'partials/view/header.view.html'"></div>
+    <div class="view-container clearfix" ng-view></div>
+    <div ng-include="'partials/view/footer.view.html'"></div>
 </body>
 </html>
